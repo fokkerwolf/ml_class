@@ -4,8 +4,8 @@ import json
 def main(api_key, category, label):
     
     content = []
-    for i in range(0,5):
-        # print "http://api.nytimes.com/svc/search/v2/articlesearch.json?fq=news_desk:('%s')&api-key=%s&page=%s" % (category, api_key, i)
+    for i in range(0,6):
+#         print "http://api.nytimes.com/svc/search/v2/articlesearch.json?fq=news_desk:('%s')&api-key=%s&page=%s" % (category, api_key, i)
         h = urllib.urlopen("http://api.nytimes.com/svc/search/v2/articlesearch.json?fq=news_desk:(\"%s\")&api-key=%s&page=%s" % (category, api_key, i))
         print h
         try:
